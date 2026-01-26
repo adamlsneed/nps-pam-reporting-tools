@@ -128,27 +128,57 @@ export const mockDependencyData = {
             dependencies: 15,
             lastRotation: 45,
             autoRotate: false,
-            systems: ['SERVER01', 'SERVER02', 'BACKUP01', 'DC-01']
+            systems: ['BACKUP-SRV01', 'BACKUP-SRV02', 'DC-PROD-01', 'DC-PROD-02', 'FILE-SERVER-01']
         },
         {
             id: 2,
-            name: 'svc_sql',
+            name: 'svc_sql_prod',
             domain: 'CORP',
             criticality: 'CRITICAL',
             dependencies: 12,
             lastRotation: 78,
             autoRotate: false,
-            systems: ['DB-PROD', 'DB-DEV', 'APP-01']
+            systems: ['SQL-PROD-01', 'SQL-PROD-02', 'APP-WEB-01', 'APP-WEB-02']
         },
         {
             id: 3,
-            name: 'svc_web',
+            name: 'svc_iis_app',
             domain: 'CORP',
             criticality: 'HIGH',
             dependencies: 8,
             lastRotation: 30,
             autoRotate: true,
-            systems: ['WEB-01', 'WEB-02', 'LB-01']
+            systems: ['WEB-PROD-01', 'WEB-PROD-02', 'LB-01', 'CDN-01']
+        },
+        {
+            id: 4,
+            name: 'svc_monitoring',
+            domain: 'CORP',
+            criticality: 'HIGH',
+            dependencies: 6,
+            lastRotation: 60,
+            autoRotate: true,
+            systems: ['SCOM-01', 'SPLUNK-01', 'GRAFANA-01']
+        },
+        {
+            id: 5,
+            name: 'svc_scheduler',
+            domain: 'CORP',
+            criticality: 'MEDIUM',
+            dependencies: 4,
+            lastRotation: 90,
+            autoRotate: false,
+            systems: ['TASK-SRV-01', 'BATCH-PROC-01']
+        },
+        {
+            id: 6,
+            name: 'svc_email',
+            domain: 'CORP',
+            criticality: 'MEDIUM',
+            dependencies: 3,
+            lastRotation: 45,
+            autoRotate: true,
+            systems: ['SMTP-RELAY-01', 'EXCHANGE-01']
         }
     ]
 }
