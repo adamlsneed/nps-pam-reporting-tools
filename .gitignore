@@ -1,0 +1,72 @@
+# PowerShell
+*.ps1xml
+*.psd1~
+*.psm1~
+
+# Output files and reports
+*.html
+*.csv
+*.json
+!package.json
+!tsconfig.json
+reports/
+output/
+
+# Logs
+logs/
+*.log
+
+# Credentials and sensitive data
+credentials.json
+secrets/
+.env
+.env.local
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node.js (for future web development)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# Python (for future ML features)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+.venv
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
+
+# Coverage and test outputs
+coverage/
+.nyc_output/
+test-results/
