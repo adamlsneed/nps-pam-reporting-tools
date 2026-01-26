@@ -1,0 +1,117 @@
+.alert-panel {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+}
+
+.alert-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-lg);
+}
+
+.alert-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.alert-count {
+    background: var(--danger);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-xl);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.alert-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.alert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    border-left: 3px solid transparent;
+    transition: var(--transition);
+}
+
+.alert-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.alert-critical {
+    border-left-color: var(--danger);
+}
+
+.alert-warning {
+    border-left-color: var(--warning);
+}
+
+.alert-info {
+    border-left-color: var(--info);
+}
+
+.alert-icon {
+    font-size: 1.1rem;
+}
+
+.alert-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.alert-message {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.alert-detail {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.alert-time {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.no-alerts {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    color: var(--text-muted);
+    justify-content: center;
+}
+
+.no-alerts-icon {
+    font-size: 1.5rem;
+}
+
+.view-all-btn {
+    width: 100%;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.view-all-btn:hover {
+    background: var(--bg-tertiary);
+    color: var(--primary);
+    border-color: var(--primary);
+}

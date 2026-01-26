@@ -1,0 +1,109 @@
+.metric-card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.metric-card-primary {
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.metric-card-primary:hover {
+    border-color: var(--primary);
+}
+
+.metric-card-success {
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.metric-card-success:hover {
+    border-color: var(--success);
+}
+
+.metric-card-warning {
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+.metric-card-warning:hover {
+    border-color: var(--warning);
+}
+
+.metric-card-danger {
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+.metric-card-danger:hover {
+    border-color: var(--danger);
+}
+
+.metric-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.metric-content {
+    flex: 1;
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: var(--spacing-xs);
+}
+
+.metric-card-primary .metric-value {
+    color: var(--primary);
+}
+
+.metric-card-success .metric-value {
+    color: var(--success);
+}
+
+.metric-card-warning .metric-value {
+    color: var(--warning);
+}
+
+.metric-card-danger .metric-value {
+    color: var(--danger);
+}
+
+.metric-label {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.metric-trend {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: 0.85rem;
+}
+
+.metric-trend.up {
+    color: var(--success);
+}
+
+.metric-trend.down {
+    color: var(--danger);
+}
+
+.trend-arrow {
+    font-weight: bold;
+}
+
+.trend-label {
+    color: var(--text-muted);
+    margin-left: var(--spacing-xs);
+}
