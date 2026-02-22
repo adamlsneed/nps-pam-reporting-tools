@@ -234,7 +234,7 @@ Architecture supports:
 ## 🏆 Production Ready
 
 **All reports tested against**:
-- ✅ Live NPS instance (nps.adamsneed.com:6500)
+- ✅ Live NPS instance (nps.lab.example.com:6500)
 - ✅ Multiple export formats (CSV, JSON, HTML)
 - ✅ Large datasets (200+ credentials, 200+ sessions)
 - ✅ Various parameter combinations
